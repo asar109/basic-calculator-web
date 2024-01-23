@@ -1,0 +1,97 @@
+
+*::selection{
+    background: none;
+
+}
+* img{
+    object-fit: cover;
+}
+*,
+*::after , *::before{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+span ,p , a{
+    font-size: 1.6rem;
+}
+h1{
+    font-size: 3.2rem;
+}
+h2{
+    font-size: 2.4rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h4{
+    font-size: 1.6;
+}
+h5{
+    font-size: 1.3rem;
+}
+h6{
+    font-size: 1.07rem;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+}
+.calculator{
+    display: grid;
+    width: 40rem;
+}
+.calculator .value{
+    grid-column:span 4;
+    height: 11rem;
+    text-align: left;
+    outline: none;
+    border: none;
+    background: #ddd;
+    font-size: 2.5rem;
+    padding: 1rem;
+
+}
+.calculator span{
+    display: grid;
+    height: 10rem;
+    text-align: center;
+    place-items: center;
+    background-color: #111;
+    color: #fff;
+    font-size: 2rem;
+}
+.calculator .f_row{
+    height: 8rem;
+}
+.calculator span:hover{
+    cursor: pointer;
+}
+.calculator span:active{
+    background-color: rgba(0, 255, 255, 0.76);
+
+}
+.calculator span.clear{
+    grid-column: span 2;
+    background-color: brown;
+    font-size: 2.2rem;
+}
+.calculator span.clear:hover{
+    background-color: rgba(165, 42, 42, 0.9);
+}
+.calculator span.enter{
+    grid-row: span 2;
+    height: 20rem;
+    background:chocolate ;
+}
+.calculator span.enter:hover{
+    background: rgba(210, 105, 30, 0.9);
+}
